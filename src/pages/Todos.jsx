@@ -170,6 +170,8 @@ export function Todos() {
               setNotes(response.data.noteData.notes);
               setMaxPages(response.data.noteData.pages);
               setPage(page-1);
+            } else {
+              setNotes([]);
             }
           } catch (error) {
             if (error.response.data.message === "Unauthorized") {
