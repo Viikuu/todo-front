@@ -51,11 +51,11 @@ export function Register() {
 		if (password !== confirmPassword) {
 			toast.error('password and confirm password must be the same', toastOptions);
 			return false;
-		} else if (password.length < 1) {
-			toast.error('password must be at least 1 characters',  toastOptions);
+		} else if (password.length < 8) {
+			toast.error('password must be at least 8 characters',  toastOptions);
 			return false;
-		} else if (username.length < 1) {
-			toast.error('username must be at least 1 characters', toastOptions);
+		} else if (username.length < 4) {
+			toast.error('username must be at least 4 characters', toastOptions);
 			return false;
 		}
 		else if (email === "") {

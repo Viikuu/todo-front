@@ -67,23 +67,23 @@ export function Login() {
 					</div>
 					<span className={"text-gray-300 p-2"}>Enter Login Details</span>
 					<div className={"mb-4 text-lg pt-5"}>
-					<input
-						className={"rounded-3xl border-none bg-teal-800 bg-opacity-50 px-6 py-2 text-center text-inherit placeholder-slate-200 shadow-lg outline-none backdrop-blur-md"}
-						type="text"
-						placeholder="Username"
-						name="username"
-						onChange={(event) => handleChange(event)}
-					/>
+						<input
+							className={"rounded-3xl border-none bg-teal-800 bg-opacity-50 px-6 py-2 text-center text-inherit placeholder-slate-200 shadow-lg outline-none backdrop-blur-md"}
+							type="text"
+							placeholder="Username"
+							name="username"
+							onChange={(event) => handleChange(event)}
+						/>
 					</div>
-						<div className={"mb-4 text-lg"}>
-					<input
-						className={"rounded-3xl border-none bg-teal-800 bg-opacity-50 px-6 py-2 text-center text-inherit placeholder-slate-200 shadow-lg outline-none backdrop-blur-md"}
-						type="password"
-						placeholder="Password"
-						name="password"
-						onChange={(event) => handleChange(event)}
-					/>
-						</div>
+					<div className={"mb-4 text-lg"}>
+						<input
+							className={"rounded-3xl border-none bg-teal-800 bg-opacity-50 px-6 py-2 text-center text-inherit placeholder-slate-200 shadow-lg outline-none backdrop-blur-md"}
+							type="password"
+							placeholder="Password"
+							name="password"
+							onChange={(event) => handleChange(event)}
+						/>
+					</div>
 					<div className={"mt-8 flex justify-center text-lg text-black"}>
 						<button type="submit" className={"rounded-3xl bg-teal-800 bg-opacity-50 px-10 py-2 text-white shadow-xl backdrop-blur-md transition-colors duration-300 hover:bg-yellow-600"}>Login</button>
 					</div>
